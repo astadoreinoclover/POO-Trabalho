@@ -9,16 +9,74 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="inicial"><button onclick="iniciarJogo()" type="button" class="btn">Iniciar</button></div>
+    <div class="inicial"><button onclick="iniciarJogo()" type="button" class="btn-init">Iniciar</button></div>
     <div class="fundo d-none">
-        <div>
-            <div class="card" style="width:400px">
-                <img class="card-img-top" src="img_avatar1.png" alt="Card image">
-                <div class="card-body">
-                <h4 class="card-title">John Doe</h4>
-                <p class="card-text">Some example text.</p>
-                <a href="#" class="btn btn-primary">See Profile</a>
+        <div class="batalha">
+            <div class="player">
+                <h3 class="nome text-white"></h3>
+                <img class="fotoProta">
+                <table class="table table-dark table-striped">
+                    <tbody>
+                        <tr>
+                            <td>Nivel</td>
+                            <td class="nivel"></td>
+                        </tr>
+                        <tr>
+                            <td>XP</td>
+                            <td class="xp"></td>
+                        </tr>
+                        <tr>
+                            <td>HP</td>
+                            <td class="hp"></td>
+                        </tr>
+                        <tr>
+                            <td>Força</td>
+                            <td class="forca"></td>
+                        </tr>
+                        <tr>
+                            <td>Dano</td>
+                            <td class="dano"></td>
+                        </tr>
+                        <tr>
+                            <td>Mana</td>
+                            <td class="mana"></td>
+                        </tr> 
+                    </tbody>
+                </table>
+                <div class="comandos">
+                    <button type="button" class="btn btn-info">Ataque</button>
+                    <button type="button" class="btn btn-secondary">Corte Rapido</button>
+                    <button type="button" class="btn btn-danger">Ergam-se</button>
+                    <button type="button" class="btn btn-dark">Area do Monarca</button>
                 </div>
+            </div>
+            <div class="monstro">
+                <h3 class="nomeM text-white"></h3>
+                <img class="fotoM">
+                <table class="table table-dark table-striped">
+                    <tbody>
+                        <tr>
+                            <td>Nivel</td>
+                            <td class="nivelM"></td>
+                        </tr>
+                        <tr>
+                            <td>HP</td>
+                            <td class="hpM"></td>
+                        </tr>
+                        <tr>
+                            <td>Força</td>
+                            <td class="forcaM"></td>
+                        </tr>
+                        <tr>
+                            <td>Dano</td>
+                            <td class="danoM"></td>
+                        </tr>
+                        <tr>
+                            <td>Mana</td>
+                            <td class="manaM"></td>
+                        </tr> 
+                    </tbody>
+                </table>
             </div>
         </div>
             
