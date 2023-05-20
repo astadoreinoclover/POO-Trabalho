@@ -1,0 +1,1 @@
+import { Protagonista } from "./personagens";

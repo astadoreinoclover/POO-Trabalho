@@ -1,0 +1,39 @@
+.inicial {
+    background-image: url('../img/inicial.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    font-size: 3vw;
+    padding: 0.7vw 5vw;
+    background-color: rgb(48, 48, 182);
+    color: #eee;
+    opacity: 0.5;
+}
+
+.btn:hover {
+    color: #eee;
+    background-color: rgb(48, 48, 182);
+    opacity: 1;
+    transition: opacity 1.5s;
+}
+
+.fundo {
+    background-image: url('../img/fundo1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
