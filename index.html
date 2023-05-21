@@ -44,10 +44,10 @@
                     </tbody>
                 </table>
                 <div class="comandos">
-                    <button type="button" class="btn btn-info">Ataque</button>
-                    <button type="button" class="btn btn-secondary">Corte Rapido</button>
-                    <button type="button" class="btn btn-danger">Ergam-se</button>
-                    <button type="button" class="btn btn-dark">Area do Monarca</button>
+                    <button onclick="atq1()" type="button" class="btn btn-info">Ataque</button>
+                    <button onclick="atq2()" type="button" class="btn btn-secondary">Corte Rapido</button>
+                    <button onclick="atq3()" type="button" class="btn btn-danger">Ergam-se</button>
+                    <button onclick="atq4()" type="button" class="btn btn-dark">Area do Monarca</button>
                 </div>
             </div>
             <div class="monstro">
@@ -80,6 +80,10 @@
             </div>
         </div>
             
+    </div>
+    <div class="game-over d-none">
+        <div class="text">game Over</div>
+        <button onclick="reiniciar()" type="button" class="btn-over">Voltar</button>
     </div>
     <script src="ts/script.js"></script>
     <script src="js/tela.js"></script>
