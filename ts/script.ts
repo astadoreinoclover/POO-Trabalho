@@ -278,11 +278,6 @@ const monstro1 = new Monstro("Goblin", 70, 10, 10, 'goblin.png');
 const monstro2 = new Monstro("Orc", 100, 30, 20, 'orc.png');
 const monstro3 = new Monstro("Dragão", 200, 50, 30, 'dragao.png');
 
-// // Sorteio para determinar qual monstro foi escolhido
-// const monstros = [monstro1, monstro2, monstro3];
-// let indiceSorteado = Math.floor(Math.random() * monstros.length);
-// let monstroEscolhido = monstros[indiceSorteado];
-
 const monstros = [monstro1, monstro2, monstro3];
 let monstroEscolhido: Monstro | null = null;
 
