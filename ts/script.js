@@ -64,9 +64,9 @@ class Protagonista {
     }
     atacar(monstro) {
         console.log(`${this._nome} atacou ${monstro.nome}!`);
-        this._hp += Math.floor(Math.random() * (this._mana * this._nivel));
-        this._forca += Math.floor(Math.random() * (this._forca * this._nivel));
-        const dano = this._dano;
+        this._hp += Math.floor(Math.random() * this._nivel);
+        this._forca += Math.floor(Math.random() * ((this._forca * this._nivel) / 10));
+        const dano = this._forca + (this._forca * (this._nivel / 5));
         monstro.receberDano(dano);
     }
     receberDano(dano) {
@@ -244,7 +244,7 @@ function atq2() {
     if (monstroEscolhido) {
         protagonista.usarFinisher1(monstroEscolhido);
         if (monstroEscolhido.hp <= 0) {
-            const xpGanho = monstroEscolhido.nivel * 2;
+            const xpGanho = monstroEscolhido.nivel * 3;
             protagonista.ganharXP(xpGanho);
         }
         else {
@@ -257,7 +257,7 @@ function atq3() {
     if (monstroEscolhido) {
         protagonista.usarFinisher2(monstroEscolhido);
         if (monstroEscolhido.hp <= 0) {
-            const xpGanho = monstroEscolhido.nivel * 2;
+            const xpGanho = monstroEscolhido.nivel * 3;
             protagonista.ganharXP(xpGanho);
         }
         else {
@@ -270,7 +270,7 @@ function atq4() {
     if (monstroEscolhido) {
         protagonista.usarFinisher3(monstroEscolhido);
         if (monstroEscolhido.hp <= 0) {
-            const xpGanho = monstroEscolhido.nivel * 2;
+            const xpGanho = monstroEscolhido.nivel * 3;
             protagonista.ganharXP(xpGanho);
         }
         else {
